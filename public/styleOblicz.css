@@ -1,0 +1,185 @@
+
+/* oblicz - oblicz sam */ 
+body{
+    background-image: url("/img1.jpg");
+    
+    background-position: center top;
+  }
+  #drop1{
+    width: 170px;
+    height: 100px;
+    border: black;
+    border-width: 0.4px;
+      border-style: solid;
+  }
+  
+    #fft1:hover{
+      background-color:rgba(255, 0, 242, 0.904);
+    }
+    #fft2:hover{
+      background-color:rgba(145, 255, 0, 0.904);
+    }
+    #fft3:hover{
+      background-color:rgba(35, 156, 255, 0.904);
+    }
+    a:hover{
+      background-color:rgba(255, 217, 0, 0.904);    
+    }
+  #m1{ 
+    color:white;
+    padding-right: 15px;
+  }
+  #m2{
+    color:white;
+    padding-right: 18px;
+  }
+  #m3{
+    color:white;
+    padding-right: 20px;
+  }
+  #m4{
+    color:white;     
+  }
+  #m5{
+    color:white;     
+  }
+    #kolor1{
+      color:green;
+      padding-right:  5px; 
+    }
+  
+    #kolor2{
+      color:rgb(0, 217, 255);
+      padding-left:  1px;
+    }
+    
+    #kolor3{
+      color:rgb(255, 0, 140);
+      padding-left: 7px;
+    }
+    #kolor4{
+     color:rgb(255, 217, 0);
+    }
+    #kolor5{
+      color:white;
+      padding-right:8px;
+    }
+    
+    footer {
+      color: rgb(255, 255, 255);    
+      text-align: center;  
+      bottom: 0; 
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+  }
+
+  #dol{
+    padding-bottom: 22px;
+  }
+  
+  /* oblicz - olbicz sam */
+
+    #col{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color:rgb(224, 205, 220);
+        
+    }
+    #jumb{
+        background-color:#333333;
+        color:white;
+    }
+    #col button{
+        width: 100px;
+    }
+    .nic #kolorr2{
+        background-color: rgb(43, 82, 211);
+        border-color: white;
+        border-width: 0.9px;
+        display: inline-block;
+       width: 120px;
+    }
+    .nic #kolorr3{
+        background-color: rgb(207, 55, 55);
+        border-color:  white;
+        border-width: 0.9px;
+        display: inline-block;
+        width: 120px;
+    }
+    .nic #kolorr4{
+        background-color:rgb(216, 195, 7);
+        border-color:  white;
+        border-width: 0.9px;
+        display: inline-block;
+         width: 120px;
+    }
+
+  #cont2{
+      background-image: url("/math.jpg");
+      background-repeat:no-repeat;
+      background-position:50% 45% ;
+
+      height: 300px;
+  }
+  
+
+  #fl1{
+   height: 220px; 
+  }
+
+  #fl2{
+    height: 220px; 
+  }
+
+#dol2{
+  padding-top:10%;
+}
+
+   #op1{
+    margin-bottom: -8px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 217, 255);
+    color: rgba(255, 255, 255, 0.842);
+  }
+
+  #op2{
+    margin-bottom: -8px;
+    padding-bottom: 10px;
+    background-color:rgb(255, 0, 140);
+    color: rgba(255, 255, 255, 0.842);
+  }
+
+  #op3{
+    margin-bottom: -8px;
+    padding-bottom: 10px;
+    background-color:rgb(255, 217, 0);
+    color: rgba(255, 255, 255, 0.842);
+  }
+
+  #cardsr{
+    margin: 0 auto; 
+    float: none; 
+    
+  }
+
+#dol1{
+  padding-top:10%;
+}
+
+#fk1{
+  height: 220px; 
+ }
+
+ #DN1{
+  width:250px;
+  height: 50px;
+  
+ }
+
+ #mat_fl1{
+    height: 220px; 
+ }

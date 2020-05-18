@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Silnia</title>
+  <link href="styleDNK.css" rel="stylesheet" type="text/css">
+  <link href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" type="text/css">
+  <script src="app2.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-32x32.png">
+
+ <script>
+    function submit()
+    {
+    var num = parseInt( document.getElementById("num").value);
+    if( isNaN(num) )
+    {
+    alert(" Wporowadź liczbę!!! ");
+    return;
+    }
+    var factorial = calcFact(num);
+    document.getElementById("answer").innerHTML = num+"<b>! &nbsp; =  &nbsp;</b>"+factorial;
+    }
+    function calcFact( num )
+    {
+    var i;
+    var fact = 1;
+    for( i = 1; i <= num; i++ )
+    {
+    fact = fact * i;
+    }
+    return fact;
+    }
+</script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark justify-left  ">
+    <div class="container-fluid">
+        
+    <ul class="navbar-nav" id="color">
+        <li class="nav-itemz">              
+            <a class="navbar-brand site-logo" id="m1" href="index2"><i class="fas fa-home" id ="kolor1"></i>Home</a>
+        </li>
+        <li class="nav-item">   
+            <a class="nav-link" id="m2" href="oblicz">Oblicz sam <i class="fas fa-question" id ="kolor2"><i class="fas fa-exclamation" id ="kolor2"></i></i></a>
+        </li>
+        <li class="nav-item">   
+            <a class="nav-link" id="m3"href="/wzory">Wzory<i class="fas fa-square-root-alt" id ="kolor3" ></i></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="m4" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-calculator" id ="kolor4"></i> Kalkulator 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+            <a class="dropdown-item" href="dn_Kal" id="fft1">Silnia</a>
+            <a class="dropdown-item" href="fl_Kal" id="fft2">Funkcja liniowa</a>
+            <a class="dropdown-item" href="fk_Kal" id="fft3">Funkcja kwadratowa</a>     
+            </div>
+        </li> 
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">   
+        <a class="nav-link" id="m5" href="/"><i class="fas fa-sign-out-alt"  id ="kolor5"></i>Wyloguj</a>
+        </li>  
+    </ul>
+    </div>
+  </nav>  
+
+     <div class="container" id="pk1">
+      
+        <h1> Oblicz Silnię </h1>
+         Wprowadź liczbę </br>
+        <p><input type = "number" min = "1" id = "num" style="text-align: center"></p>
+        
+        <p class="fl2">  <button type="button"  id="x"class="btn btn-secondary btn-lg" value="Oblicz Silnie"   onclick = "submit()">WYNIK</button ></p>
+        <p class="fl3" id="answer">\_____/</p>
+
+    </div>
+
+<div class="container-fluid bg-dark"> 
+  <div class="row">
+    <div class="col-sm-11" > 
+      <footer> 
+          <marquee direction="left">Autor: &nbsp; Aleksander Haberland &nbsp; &nbsp; e-mail: &nbsp; aleksanderhabe@gmail.com</marquee>              
+      </footer>
+    </div>
+    <div class="col-sm-1 text-center"  > 
+        <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top "  role="button" title="Kliknij, aby powrócić na górę strony"> <i class="fas fa-chevron-up"></i></a>
+    </div>
+  </div>
+</div>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

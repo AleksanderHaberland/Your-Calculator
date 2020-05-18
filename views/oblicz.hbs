@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Oblicz sam</title>
+  <link href="styleOblicz.css" rel="stylesheet" type="text/css">
+  <link href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" type="text/css">
+  <script src="app2.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-32x32.png">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-dark justify-left  ">
+    <div class="container-fluid">
+        
+    <ul class="navbar-nav" id="color">
+        <li class="nav-itemz">              
+            <a class="navbar-brand site-logo" id="m1" href="index2"><i class="fas fa-home" id ="kolor1"></i>Home</a>
+        </li>
+        <li class="nav-item">   
+            <a class="nav-link" id="m2" href="oblicz">Oblicz sam <i class="fas fa-question" id ="kolor2"><i class="fas fa-exclamation" id ="kolor2"></i></i></a>
+        </li>
+        <li class="nav-item">   
+            <a class="nav-link" id="m3"href="wzory">Wzory<i class="fas fa-square-root-alt" id ="kolor3" ></i></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="m4" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-calculator" id ="kolor4"></i> Kalkulator 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+             <a class="dropdown-item" href="dn_Kal" id="fft1">Silnia</a>
+            <a class="dropdown-item" href="fl_Kal" id="fft2">Funkcja liniowa</a>
+            <a class="dropdown-item" href="fk_Kal" id="fft3">Funkcja kwadratowa</a>     
+            </div>
+        </li> 
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">   
+        <a class="nav-link" id="m5" href="/"><i class="fas fa-sign-out-alt"  id ="kolor5"></i>Wyloguj</a>
+        </li>  
+    </ul>
+    </div>
+  </nav> 
+
+  <div class="container mt-2  bg-dark" id="kontener1" >
+   <div class="text-center">
+     
+  <div class = "container" id="col">
+    <div class= "nic">
+      <div class = "row" >
+        <div class="col-sm-4">
+          <h2>Funkcja Liniowa</h2>
+          
+          <a class="btn btn-secondary btn-lg" href="#pkt1" role="button" id ="kolorr2"> 1 »</a>
+        </div>
+        <div class="col-sm-4">
+          <h2>Funkcja Kwadratowa</h2>
+          
+          <a class="btn btn-secondary btn-lg" href="#pkt2" role="button" id ="kolorr3"> 2 »</a>
+        </div>
+        <div class="col-sm-4">
+          <h2>Dwumian Newtona</h2>
+          
+          <a class="btn btn-secondary btn-lg" href="#pkt3" role="button" id ="kolorr4"> 3 »</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <div class="container" id="cont2">
+ </div>
+
+    <div class="container" id="op1">
+      <div id="pkt1"></div>
+        <h3 >Funkcja liniowa </h3>
+    </div>
+
+    <div class="container  bg-light" id="funkcjal">
+      <div class="fontsize">
+      <div class ="row">
+        <div class="col-sm-5">
+          <p id="dol1">Funkcję nazywamy funkcją liniową, jeżeli określona jest wzorem : <b>f(x) = ax + b</b>, gdzie <b>a</b> i <b>b</b> są liczbami rzeczywistymi.</br>
+          <b>a</b> – nazywa się współczynnikiem kierunkowym i odpowiada za wiele ważnych własności tej funkcji, które są omówione niżej. </br> <b>b</b> – wyraz wolny.</p>
+        </div> 
+        <div class="col-sm-7"> 
+        <div class="text-center">
+        <div class="card" style="width: 83%;" id="cardsr">
+        <div class="card-body">
+          <p class="card-text">Wykresem funkcji liniowej jest linia prosta <b>f(x) = ax + b</b>
+       </div>
+          <img src="/fl0.svg"  id="fl1"> </p>
+       </div>
+       </div>
+       </div>
+       </div>
+      </div>
+    </div>
+
+
+   <div class="container" id="op1">
+    <h3 style="padding-top:15px;"> Miejsce zerowe funkcji liniowej</h3>
+    </div>
+
+    <div class="container  bg-light" id="funkcjal">
+    <div class="fontsize">
+      
+       <div class ="row">
+        
+        <div class="col-sm-5">
+          <p id="dol2"> W celu obliczenia miejsca zerowego należy w miejsce „y” wstawić liczbę „0”. Po obliczeniu prostego równania otrzymujesz miejsce zerowe funkcji liniowej.
+            Wykorzystujesz wzór na współczynniki występujące w postaci kierunkowej </br><b>y = ax + b</b>. </br>Wzór na miejsce zerowe funkcji liniowej:<b> x=− <sup>b</sup>&frasl;<sub>a</sub></b> </p>
+          </div> 
+        <div class="col-sm-7"> 
+          <div class="text-center">
+        <div class="card" style="width: 83%;" id="cardsr">
+        <div class="card-body">
+           <p class="card-text">Wykresem funkcji liniowej jest linia prosta <b>f(x) = ax + b</b>
+        </div>
+           <img src="/fl2.svg"  id="fl2">
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+  <div class="container" id="op1">
+  <h3 style="padding-top:15px;" >Wyliczanie miejsca zerowego funkcji liniowej </h3>
+  </div>
+   <div class="container  bg-light" id="funkcjal">
+    <div class="fontsize">
+        
+          <p style="padding-top: 4%;"><b>Zadanie 1.</b> Oblicz miejsce zerowe dla funkcji <b> y = -4x +2</b></p>
+          <div class="text-center">
+          <div class="card" style="width: 83%;" id="cardsr">
+              <b>  <img src="/mat_fl_1.jpg" class="img-fluid" id="mat_fl1"> </b>
+            <div class="card-body">
+                <p class="card-text">Mamy do wyboru dwie metody na rozwiązanie zadania. Wynik <b> x = <sup>1</sup>&frasl;<sub>2</sub></b>
+            </div>
+          </div>
+          </div>
+        
+         <p style="padding-top: 4%;"><b>Zadanie 2.</b> Oblicz miejsce zerowe dla funkcji <b> y = <sup>1</sup>&frasl;<sub>5</sub> x +1</b></p>
+          <div class="text-center">
+          <div class="card" style="width: 83%;" id="cardsr">
+            <b>    <img src="/mat_fl_2.jpg" class="img-fluid" id="mat_fl1"> </b>
+            <div class="card-body">
+                <p class="card-text">Mamy do wyboru dwie metody na rozwiązanie zadania. Wynik <b> x = -5</b>
+            </div>
+          </div>
+          </div>
+       </div>
+    </div>
+
+      <div class="container" id="op2">
+      <div id="pkt2"></div>
+        <h3 >Funkcja Kwadratowa </h3>
+    </div>
+
+    <div class="container  bg-light" id="funkcjal">
+      <div class="fontsize">
+      <div class ="row">
+        <div class="col-sm-5">
+          <p id="dol1">Funkcja kwadratowa zwana <b>trójmianem kwadratowym</b>, jest to funkcja określona wzorem: <b>f(x)=ax<sup>2</sup>+bx+c</b>.</br></br>
+          Istnieją trzy postaci funkcji kwadratowej: <b>ogólna, kanoniczna i iloczynowa</b>. </br></br>
+          Jeżeli <b>a = 0</b>, to funkcja jest liniowa.</br> Jeżeli <b>a &ne; 0</b>, to fuknkcja jest kwadratowa.
+          </p>
+        </div> 
+        <div class="col-sm-7"> 
+        <div class="text-center">
+        <div class="card" style="width: 83%;" id="cardsr">
+        <div class="card-body">
+          <p class="card-text">Wykresem funkcji kwadratowej jest parabola <b>f(x)=ax<sup>2</sup>+bx+c</b>
+       </div>
+          <img src="/fk-1.svg"  id="fl1"> </p>
+       </div>
+       </div>
+       </div>
+       </div>
+      </div>
+    </div>
+
+    <div class="container" id="op2">
+      <div id="pkt1"></div>
+        <h3 >Miejsca zerowe funckji kwadratowej </h3>
+    </div>
+
+    <div class="container  bg-light" id="funkcjal">
+      <div class="fontsize">
+      <div class ="row">
+        <div class="col-sm-5">
+           <p id="dol1">Liczba miejsc zerowych funkcji kwadratowej zależy od wartości wyróżnika <b>&Delta;=b<sup>2</sup>−4ac.</b></br>
+           <h5>Funkcja kwadratowa:</h5>
+          - posiada dwa miejsca zerowe dla <b>&Delta; > 0</b>.
+            <img src="/mat_fk_0.jpg" class="img-fluid" id="fk2"> </br>
+          - posiada jedno miejsce zerowe dla <b>&Delta; = 0</b>.
+          <img src="/mat_fk_1.jpg" class="img-fluid" id="fk2"> </br>
+          - nie posiada miejsc zerowych dla <b>&Delta; < 0</b>.
+          </p>
+        </div> 
+        <div class="col-sm-7"> 
+        <div class="text-center">
+        <div class="card" style="width: 83%;" id="cardsr">
+        <div class="card-body">
+          <p class="card-text">Wykresem funkcji kwadratowej jest parabola <b>f(x)=ax<sup>2</sup>+bx+c</b>
+       </div>
+          <img src="/fk-2.svg" class="img-fluid" id="fk1"> </p>
+       </div>
+       </div>
+       </div>
+       </div>
+      </div>
+    </div>
+
+            <div class="container" id="op2">
+          <h3 style="padding-top:15px;" >Wyliczanie miejsca zerowego funkcji kwadratowej </h3>
+          </div>
+
+          <div class="container  bg-light">
+  
+          <p style="padding-top: 4%;"><b>Zadanie 1.</b> Oblicz miejsce zerowe dla funkcji <b> y = -x<sup>2</sup> -11x +12</b></p>
+          <div class="text-center">
+          <div class="card" style="width: 83%;" id="cardsr">
+              <b> <img src="/mat_fk_3.jpg" class="img-fluid" id="mat_fl1"> </b>
+            <div class="card-body">
+                <p class="card-text">Delta > 0 więcj mamy x<sub>1</sub>= 1 oraz  x<sub>2</sub>= -12</p>
+            </div>
+          </div>
+          </div>
+        
+         <p style="padding-top: 4%;"><b>Zadanie 2.</b> Oblicz miejsce zerowe dla funkcji <b> y = 2x<sup>2</sup> -4x +2</b></p>
+          <div class="text-center">
+          <div class="card" style="width: 83%;" id="cardsr">
+              <b> <img src="/mat_fk_4.jpg"class="img-fluid" id="mat_fl1"> </b>
+            <div class="card-body">
+                <p class="card-text">Delta = 0 więcj mamy x<sub>0</sub>= 1</p>
+            </div>
+          </div>
+          </div>
+    </div>
+ 
+    <div class="container" id="op3">
+      <div id="pkt3"></div>
+        <h3 >Dwumian Newtona </h3>
+    </div>
+
+    <div class="container  bg-light" id="funkcjal">
+      <div class="fontsize">
+      <div class ="row">
+        <div class="col-sm-5">
+          <p id="dol1">tradycyjna nazwa twierdzenia nazywanego także wzorem <b>dwumianowym</b> lub wzorem<b> Newtona</b>, </br>
+          zgodnie z którym potęgę <b>dwumianu (x + y)<sup>2</sup></b> można rozwinąć w sumę <b>jednomianów postaci ax<sup>k</sup>y<sup>1</sup></b>
+           W każdym z tych jednomianów współczynnik <b>a</b> jest dodatnią liczbą całkowitą,a wykładniki przy <b>x</b> oraz <b>y</b> sumują się do <b>n</b>. 
+           Współczynniki <b>a</b> przy jednomianach są symbolami Newtona i nazywane są <b>współczynnikami dwumianowymi</b>.</p>
+        </div> 
+        <div class="col-sm-7"> 
+        <div class="text-center">
+        <div class="card" style="width: 83%;" id="cardsr">
+        <div class="card-body">
+          <p class="card-text">Wykładnik <b>1</b>,<b>2</b>,<b>3</b></p>
+       </div>
+          <img src="/DN-1.svg"  id="fl1"> 
+       </div>
+       </div>
+       </div>
+       </div>
+      </div>
+    </div>
+ 
+
+    <div class="container" id="op3">
+        <h3 >Wzór Newtona </h3>
+    </div>
+
+    <div class="container  bg-light">
+      <div class="fontsize">
+      <div class ="row">
+        <div class="col-sm-5">
+           <p id="dol1">Dwumianem Newtona nazywamy wzór:</br> 
+            <img src="/mat_DN_1.jpg" class="img-fluid" id=""> </br>
+             gdzie symbol: <img src="/mat_DN_2.jpg" class="img-fluid" id=""> oznacza współczynnik dwumianowy i jest obliczany ze wzoru: </br>
+            <img src="/mat_DN_3.jpg" class="img-fluid" id="DN1">
+          </p>
+        </div> 
+        <div class="col-sm-7"> 
+        <div class="text-center">
+        <div class="card" style="width: 83%;" id="cardsr">
+        <div class="card-body">
+          <p class="card-text">Geometria 3-wymiarowa
+       </div>
+          <img src="/DN-2.svg" class="img-fluid" id="fk1"> </p>
+       </div>
+       </div>
+       </div>
+       </div>
+      </div>
+    </div>
+
+     <div class="container" id="op3">
+          <h3 style="padding-top:15px;" >Rozwiązywanie działań na dwumianach </h3>
+          </div>
+
+      <div class="container  bg-light">
+  
+          <p style="padding-top: 4%;"><b>Zadanie 1.</b> Rozpisz wyrażenie <b>(x+7)<sup>3</sup></b> stosując dwumian Newtona.</p>
+          <div class="text-center">
+          <div class="card" style="width: 83%;" id="cardsr">
+              <b> <img src="/mat_DN_4.jpg" class="img-fluid" id="mat_fl1"> </b>
+            <div class="card-body">
+                <p class="card-text">Rówanie rozpisane dla potęgi 3</p>
+            </div>
+          </div>
+          </div>
+        
+         <p style="padding-top: 4%;"><b>Zadanie 2.</b> Oblicz wzorem Newtona silnię z 5.</p>
+          <div class="text-center">
+          <div class="card" style="width: 83%;" id="cardsr">
+              <b> <img src="/mat_DN_5.jpg"class="img-fluid" id="mat_fl1"> </b>
+            <div class="card-body">
+                <p class="card-text">Korzystając z wzoru na wpółczynnik dwumianowy, możemy dużo szybciej policzyć zadanie</p>
+            </div>
+          </div>
+          </div>
+     </div>
+
+     <div class="container   bg-dark" >
+   <div class="text-center">
+     
+  <div class = "container" id="col">
+    <div class= "nic">
+      <div class = "row" >
+        <div class="col-sm-4">
+          <h2>Funkcja Liniowa</h2>
+          
+          <a class="btn btn-secondary btn-lg" href="#pkt1" role="button" id ="kolorr2"> 1 »</a>
+        </div>
+        <div class="col-sm-4">
+          <h2>Funkcja Kwadratowa</h2>
+          
+          <a class="btn btn-secondary btn-lg" href="#pkt2" role="button" id ="kolorr3"> 2 »</a>
+        </div>
+        <div class="col-sm-4">
+          <h2>Dwumian Newtona</h2>
+          
+          <a class="btn btn-secondary btn-lg" href="#pkt3" role="button" id ="kolorr4"> 3 »</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+
+<div class="container-fluid bg-dark"> 
+  <div class="row">
+    <div class="col-sm-11" > 
+      <footer> 
+          <marquee direction="left">Autor: &nbsp Aleksander Haberland &nbsp &nbsp e-mail: &nbsp aleksanderhabe@gmail.com</marquee>              
+      </footer>
+    </div>
+    <div class="col-sm-1 text-center"  > 
+        <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top "  role="button" title="Kliknij, aby powrócić na górę strony"> <i class="fas fa-chevron-up"></i></a>
+    </div>
+  </div>
+</div>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

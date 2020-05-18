@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+   <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wzory</title>
+  <link href="styleWzory.css" rel="stylesheet" type="text/css">
+  <link href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" type="text/css">
+  <script src="app2.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-32x32.png">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark justify-left  ">
+    <div class="container-fluid">
+        
+    <ul class="navbar-nav" id="color">
+        <li class="nav-itemz">              
+            <a class="navbar-brand site-logo" id="m1" href="index2"><i class="fas fa-home" id ="kolor1"></i>Home</a>
+        </li>
+        <li class="nav-item">   
+            <a class="nav-link" id="m2" href="oblicz">Oblicz sam <i class="fas fa-question" id ="kolor2"><i class="fas fa-exclamation" id ="kolor2"></i></i></a>
+        </li>
+        <li class="nav-item">   
+            <a class="nav-link" id="m3"href="/wzory">Wzory<i class="fas fa-square-root-alt" id ="kolor3" ></i></a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="m4" href="#"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-calculator" id ="kolor4"></i> Kalkulator 
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+              <a class="dropdown-item" href="dn_Kal" id="fft1">Silnia</a>
+            <a class="dropdown-item" href="fl_Kal" id="fft2">Funkcja liniowa</a>
+            <a class="dropdown-item" href="fk_Kal" id="fft3">Funkcja kwadratowa</a>         
+            </div>
+        </li> 
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">   
+        <a class="nav-link" id="m5" href="/"><i class="fas fa-sign-out-alt"  id ="kolor5"></i>Wyloguj</a>
+        </li>  
+    </ul>
+    </div>
+  </nav>  
+
+    <div class="container " id="fl-t-1">
+        <h3 id="sr">Funkcja liniowa </h3></br>
+    </div>
+    <div class="container " id="conColor1">
+        <p>Funkcję liniową określa się wzorem <b>f(x) = ax + b</b>Wzór funkcji liniowej często równoważnie zapisuje się: <b>y = ax + b</b>, gdzie:</p>
+        <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5" id="sr_0">
+           <b>a</b>- to współczynnik kierunkowy prostej.
+        </div>
+        <div class="col-sm-3" id="sr_0">
+             <b>b</b>- to wyraz wolny.
+        </div>
+        </div>
+            </br>
+         
+        <p  id="sr">Wykresem funkcji liniowej jest linia prosta <b>f(x) = ax + b</b> nachylona do osi OX pod kątem 	<b>&prop;</b>, gdzie: <b>a = tan&prop;</b>
+        <img src="/fl0.svg"  class="img-fluid" id="fl1"> </p> </br></br>     
+
+        <div class="row" >
+        <div class="col-sm-4" id="sr_0">Funkcja liniowa jest rosnąca jeżeli <b>a &gt; 0 </b>.</br></div>
+        <div class="col-sm-4" id="sr_0">Funkcja liniowa jest malejąca jeżeli  <b>a &lt; 0 </b>.</br></div>
+        <div class="col-sm-4" id="sr_0">Funkcja liniowa jest stała jeżeli  <b>a = 0</b>.</br></div>
+        </div>
+       <p><b><img src="/fl_kierunki.png"  class="img-fluid" id="consr2"> </b></p>
+       <p> Miejsce zerowe funkcji liniowej można obliczyć ze wzoru: &nbsp; &nbsp; <b> x = − <sup>b</sup>&frasl;<sub>a</sub></b></p>
+       
+    </div>
+
+    <div class="container " id="fl-t-2">
+        <h3 id="sr">Funkcja Kwadratowa</h3></br>
+    </div>
+    <div class="container " id="conColor2">
+        <p>Postać <b>ogólna</b> funkcji kwadratowej:&nbsp; <b>y = ax<sup>2</sup> + bx + c</b></p>
+        <p>Postać <b>kanoniczna</b> funkcji kwadratowej:&nbsp; <b>y = a*( x-p )<sup>2</sup> + q</b> gdzie:
+        <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5" id="sr_0">
+           <b>p = -b&frasl;2a</b>
+        </div> 
+        <div class="col-sm-3" id="sr_0">
+             <b>q = −Δ&frasl;4a</b>
+        </div></p>
+        </div>
+        
+        <p>Postać <b>iloczynowa</b> funkcji kwadratowej:</p>
+        <div class="row" >
+        <div class="col-sm-4" id="sr_0">Jeśli <b>Δ > 0 </b>, to:</div>
+        <div class="col-sm-4" id="sr_0"><b>y= a(x−x<sub>1</sub>)(x−x<sub>2</sub>)</b>, gdzie:</div>
+        <div class="col-sm-4" id="sr_0"><b>x<sub>1</sub> i x<sub>2</sub></b> są miejscami zerowymi</div>
+        </div>
+         <div class="row" >
+        <div class="col-sm-4" id="sr_0">Jeśli <b>Δ = 0 </b>, to:</div>
+        <div class="col-sm-4" id="sr_0"><b>y= a(x−x<sub>0</sub>)<sup>2</sup></b>, gdzie:</div>
+        <div class="col-sm-4" id="sr_0"><b>x<sub>0</sub></b> jest jedynym miejscem zerowym</div>
+        </div>
+        <div class="row" >
+        <div class="col-sm-4" id="sr_0">Jeśli <b>Δ < 0 </b>, to:</div>
+        <div class="col-sm-4" id="sr_0"> brak miejsc zerowych</div>
+        </div>
+
+         </br>
+       <p  id="sr">Współczynniki kieunkowe <b>p</b> i <b>q</b> 
+        <img src="/fk_kierunki.png"  class="img-fluid bg-light" id="fk1"> </p> </br></br>     
+
+        Jeśli współczynnik <b>a</b> przy<b> x<sup>2</sup></b> jest dodatni to parabola jest skierowana ramionami do góry.</br>
+        Jeśli współczynnik <b>a</b> przy<b> x<sup>2</sup></b> jest ujemny to parabola jest skierowana ramionami do dołu.
+        </br></br>    
+        <p><b><img src="/fk_kierunki.svg"  class="img-fluid bg-light" id="fk2"> </b></p>
+    </div>
+    
+    <div class="container " id="DN-1">
+        <h3 id="sr">Dwumian Newtona </h3></br>
+    </div>
+    <div class="container " id="conColor3">
+        <p>Dwumianem Newtona nazywamy wzór:</p>
+        <img src="/mat_DN_1.jpg"  class="img-fluid" id="DN1"> </p>    
+        </br> 
+        <p >gdzie symbol: <img src="/mat_DN_2.jpg"  class="img-fluid" >    
+        <p>obliczany jest ze wzoru: <img src="/mat_DN_3.jpg"  class="img-fluid" > </p>
+    </br> </br> 
+    </div>
+
+
+
+ <div class="container-fluid bg-dark"> 
+  <div class="row">
+    <div class="col-sm-11" > 
+      <footer> 
+          <marquee direction="left">Autor: &nbsp; Aleksander Haberland &nbsp; &nbsp; e-mail: &nbsp; aleksanderhabe@gmail.com</marquee>              
+      </footer>
+    </div>
+    <div class="col-sm-1 text-center"  > 
+        <a id="back-to-top" href="#" class="btn btn-dark btn-lg back-to-top "  role="button" title="Kliknij, aby powrócić na górę strony"> <i class="fas fa-chevron-up"></i></a>
+    </div>
+  </div>
+</div>
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
